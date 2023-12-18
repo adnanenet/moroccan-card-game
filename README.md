@@ -20,4 +20,4 @@
 <h2>End of the Game</h2><p>: The game ends when one player successfully plays all their even-numbered cards, winning the game. If a player has the number 10 at the end of their turn, they lose.</p>
 =======
   
-
+<img align="center" src="https://raw.githubusercontent.com/cyberjujutsu/moroccan-card-game/main/first%20final.png" alt="moroccan fame cart">
