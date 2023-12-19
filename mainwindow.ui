@@ -16,30 +16,26 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">body {background-color: rgb(170, 0, 0);}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QToolButton" name="toolButton">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>360</y>
-      <width>25</width>
-      <height>27</height>
+      <x>320</x>
+      <y>340</y>
+      <width>111</width>
+      <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 0, 0, 255); border: none;</string>
+    </property>
     <property name="text">
-     <string>...</string>
+     <string>click</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
   </widget>
  </widget>
  <resources/>
