@@ -1,0 +1,9 @@
+# ninja log v5
+2	1009	7246482414928643	untitled_autogen/timestamp	934c4699a45b8c3d
+2	1009	7246482414928643	untitled_autogen/mocs_compilation.cpp	934c4699a45b8c3d
+2	1009	7246482414928643	C:/Users/robot/Documents/moroccan-card-game/build-untitled-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/untitled_autogen/timestamp	934c4699a45b8c3d
+2	1009	7246482414928643	C:/Users/robot/Documents/moroccan-card-game/build-untitled-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/untitled_autogen/mocs_compilation.cpp	934c4699a45b8c3d
+1011	4657	7246482452454229	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.obj	cd84bdc75641e096
+1015	4789	7246482453778480	CMakeFiles/untitled.dir/mainwindow.cpp.obj	ae2c603590d9500d
+1021	4880	7246482454700098	CMakeFiles/untitled.dir/main.cpp.obj	7cbd097944621b8a
+4880	5292	7246482458709449	untitled.exe	676d2ef0eeea6a88
