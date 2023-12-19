@@ -1,6 +1,6 @@
 <h1 align="center">Moroccan Game Cart</h1>
 
-  <img align="center" src="https://github.com/cyberjujutsu/moroccan-card-game/asset/blob/main/first%20page.png" alt="moroccan fame cart">
+  <img align="center" src="https://github.com/cyberjujutsu/moroccan-card-game/blob/main/asset/first%20page.png" alt="moroccan fame cart">
 
 =======
 <h2>Players :</h2><p> There are two players - a user and a robot.</p>
