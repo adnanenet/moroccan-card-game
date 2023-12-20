@@ -1,3 +1,4 @@
+// mainwindow.cpp
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -7,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    // Set your custom title here
+    setWindowTitle("Sota");
 }
 
 MainWindow::~MainWindow()
