@@ -28,10 +28,15 @@ MainWindow::MainWindow(QWidget *parent)
     // Create "Play Now" button
     QPushButton *playNowButton = new QPushButton("Play Now", this);
     playNowButton->setStyleSheet("QPushButton {"
-                                 "background-color: yellow;"
-                                 "border: 1px solid red;"
-                                 "border-radius: 10px;"
-                                 "padding: 15px;"
+                                 "background-color: #FFF500;"
+                                 "border: 1px solid #FF0000;"
+                                 "border-radius: 20px;"
+                                 "padding-top: 8px;"
+                                 "padding-bottom: 8px;"
+                                 "padding-left: 10px;"
+                                 "padding-right: 10px;"
+                                 "font-size: 20px;"
+                                 "font-weight: bold;"
                                  "}"
                                  "QPushButton:hover {"
                                  "background-color: lightyellow;"
@@ -39,7 +44,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Create QLabel for white text
     QLabel *whiteTextLabel = new QLabel("Sota", this);
-    whiteTextLabel->setStyleSheet("color: white;");  // Set the text color to white
+    whiteTextLabel->setStyleSheet("color: white;"
+                                  "font-size: 20px;"
+                                  "font-weight: bold;");  // Set the text color to white
 
     // Create a QVBoxLayout to center the image and add the button
     QVBoxLayout *layout = new QVBoxLayout(this);
