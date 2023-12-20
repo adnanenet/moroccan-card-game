@@ -13,10 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     // icon
     setWindowIcon(QIcon(":/gfx/icon.ico"));
     // Set the background image using a stylesheet
-    QString styleSheet = "background-image: url(:/gfx/bg.png);"
-                         "background-repeat: no-repeat;"
-                         "background-position: center;"
-                         "background-size: cover;";
+    QString styleSheet = "background-color: #004d00;";
 
     this->setStyleSheet(styleSheet);
 
