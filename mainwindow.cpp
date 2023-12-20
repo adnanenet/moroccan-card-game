@@ -8,8 +8,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Set your custom title here
+    // title of the game
     setWindowTitle("Sota");
+    // setWindowIcon(QIcon(":/path/to/your/icon.png"));
 }
 
 MainWindow::~MainWindow()
