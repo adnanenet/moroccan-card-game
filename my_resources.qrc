@@ -2,6 +2,5 @@
     <qresource prefix="/">
         <file>gfx/icon.ico</file>
         <file>gfx/home.png</file>
-        <file>gfx/bg.jpg</file>
     </qresource>
 </RCC>

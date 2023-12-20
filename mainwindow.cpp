@@ -1,7 +1,9 @@
 // mainwindow.cpp
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <QMessageBox>
+#include <QLabel>
+#include <QVBoxLayout>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,8 +16,22 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowIcon(QIcon(":/gfx/icon.ico"));
     // Set the background image using a stylesheet
     QString styleSheet = "background-color: #004d00;";
-
     this->setStyleSheet(styleSheet);
+    // Create a QLabel for the centered image
+    QLabel *centeredImage = new QLabel(this);
+    centeredImage->setPixmap(QPixmap(":/gfx/home.png").scaled(600, 600, Qt::KeepAspectRatio));  // Replace with your image path
+    centeredImage->setAlignment(Qt::AlignCenter);
+
+    // Create a QVBoxLayout to center the image with top spacing
+    QVBoxLayout *layout = new QVBoxLayout(this);
+    layout->addSpacing(20);  // Adjust the spacing as needed
+    layout->addWidget(centeredImage);
+    layout->setAlignment(Qt::AlignTop | Qt::AlignHCenter);
+
+    // Set the central widget of the main window to a QWidget with the QVBoxLayout
+    QWidget *centralWidget = new QWidget(this);
+    centralWidget->setLayout(layout);
+    setCentralWidget(centralWidget);
 
 }
 
