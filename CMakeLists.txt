@@ -24,6 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         Secdialog.ui
+        my_resources.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET moroccan-card-game APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

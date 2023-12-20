@@ -10,9 +10,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     // title of the game
-    // title of the game
+    // title of the game qrc:///icons/gc.ico
     setWindowTitle("Sota");
-    // setWindowIcon(QIcon(":/path/to/your/icon.png"));
+    setWindowIcon(QIcon(":/gfx/icon.ico"));
+
 }
 
 MainWindow::~MainWindow()
