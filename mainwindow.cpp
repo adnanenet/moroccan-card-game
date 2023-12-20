@@ -2,6 +2,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QLabel>
+#include <QPushButton>
 #include <QVBoxLayout>
 
 
@@ -32,6 +33,21 @@ MainWindow::MainWindow(QWidget *parent)
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(layout);
     setCentralWidget(centralWidget);
+
+    // Create "Play Now" button
+    QPushButton *playNowButton = new QPushButton("Play Now", this);
+    playNowButton->setStyleSheet("QPushButton {"
+                                 "background-color: yellow;"
+                                 "border: 2px solid red;"
+                                 "border-radius: 10px;"
+                                 "padding: 5px;"
+                                 "}"
+                                 "QPushButton:hover {"
+                                 "background-color: lightyellow;"
+                                 "}");
+    // Add the button to the layout
+    layout->addWidget(playNowButton);
+
 
 }
 
