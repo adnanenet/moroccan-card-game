@@ -8,11 +8,17 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    // title of the game
-    // title of the game qrc:///icons/gc.ico
+    // title of the game
     setWindowTitle("Sota");
+    // icon
     setWindowIcon(QIcon(":/gfx/icon.ico"));
+    // Set the background image using a stylesheet
+    QString styleSheet = "background-image: url(:/gfx/bg.png);"
+                         "background-repeat: no-repeat;"
+                         "background-position: center;"
+                         "background-size: cover;";
+
+    this->setStyleSheet(styleSheet);
 
 }
 
@@ -20,13 +26,3 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
-void MainWindow::on_pushButton_clicked()
-{
-    QMessageBox::warning(
-        this,
-        tr("sota"),
-        tr("you still have double carts") );
-}
-
