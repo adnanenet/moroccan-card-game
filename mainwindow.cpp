@@ -3,6 +3,7 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include "Secdialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -42,6 +43,8 @@ MainWindow::MainWindow(QWidget *parent)
                                  "background-color: lightyellow;"
                                  "}");
 
+    // Connect the "Play Now" button click to the onPlayNowClicked() slot
+    connect(playNowButton, &QPushButton::clicked, this, &MainWindow::onPlayNowClicked);
     // Create QLabel for white text
     QLabel *whiteTextLabel = new QLabel("Sota", this);
     whiteTextLabel->setStyleSheet("color: white;"
@@ -61,6 +64,15 @@ MainWindow::MainWindow(QWidget *parent)
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(layout);
     setCentralWidget(centralWidget);
+}
+
+void MainWindow::onPlayNowClicked()
+{
+    // Open the second dialog when the button is clicked
+    // Open the second dialog when the button is clicked
+    SecDialog secDeialog;
+    secDeialog.setModal(true);
+    secDeialog.exec(); // Use exec() to make it a modal dialog
 }
 
 MainWindow::~MainWindow()

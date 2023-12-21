@@ -17,6 +17,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onPlayNowClicked();  // Slot to handle the "Play Now" button click
+
 private:
     Ui::MainWindow *ui;
 };
