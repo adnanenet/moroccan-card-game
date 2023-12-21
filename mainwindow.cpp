@@ -33,10 +33,10 @@ MainWindow::MainWindow(QWidget *parent)
                                  "border-radius: 20px;"
                                  "padding-top: 8px;"
                                  "padding-bottom: 8px;"
-                                 "padding-left: 10px;"
-                                 "padding-right: 10px;"
+                                 "padding-left: 40px;"
+                                 "padding-right: 40px;"
                                  "font-size: 20px;"
-                                 "font-weight: bold;"
+                                 "font-family: 'Times New Roman', serif;"
                                  "}"
                                  "QPushButton:hover {"
                                  "background-color: lightyellow;"
@@ -45,8 +45,8 @@ MainWindow::MainWindow(QWidget *parent)
     // Create QLabel for white text
     QLabel *whiteTextLabel = new QLabel("Sota", this);
     whiteTextLabel->setStyleSheet("color: white;"
-                                  "font-size: 20px;"
-                                  "font-weight: bold;");  // Set the text color to white
+                                  "font-size: 40px;"
+                                  "font-family: 'Times New Roman', serif;");  // Set the text color to white
 
     // Create a QVBoxLayout to center the image and add the button
     QVBoxLayout *layout = new QVBoxLayout(this);
