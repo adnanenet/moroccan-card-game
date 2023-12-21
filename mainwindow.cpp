@@ -3,7 +3,7 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include "Secdialog.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -69,11 +69,12 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::onPlayNowClicked()
 {
     // Open the second dialog when the button is clicked
-    // Open the second dialog when the button is clicked
-    SecDialog secDeialog;
-    secDeialog.setModal(true);
-    secDeialog.exec(); // Use exec() to make it a modal dialog
+    hide();
+    secDialog = new SecDialog(this);
+    secDialog->show(); // Use show() to make it a modeless dialog
 }
+
+
 
 MainWindow::~MainWindow()
 {
